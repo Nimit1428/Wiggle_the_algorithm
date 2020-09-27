@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Page-2</title>
+    <style>
+    .fieldset-auto-width {
+        display: inline-block;
+   }
+        input[type = text]{
+            width: 50%;
+            padding: 12px 10px;
+            margin: 15px 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:#2b2b2b;
+        color: white;
+        }
+        h2{
+            display: none;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">Lets Solve Some Riddles</h1>
+    <form>
+      <center>
+      <div style="width: 500px;">
+      <fieldset class=".fieldset-auto-width" id = 'divi'>
+        <legend  align="center">Riddle-1</legend>
+        <p>
+          <center>
+            <label>What has to be broken before you can use it?</label></br>
+            <input type = "text"
+              id = "myText"/>
+          </center>
+        </p>
+        <p align="center">
+          <button onclick="myFunction1()" type="button">
+            Submit
+          </button>
+          <h2 id="divi1">new</h2>
+        </p>
+      </fieldset>
+      </div>
+      </center>
+      <center>
+      <div style="width: 500px;">
+      <fieldset class=".fieldset-auto-width">
+        <legend  align="center">Riddle-2</legend>
+        <p>
+          <center>
+            <label>What is full of holes but still holds water?</label>
+            <input type = "text"
+              id = "myText"/>
+          </center>
+        </p>
+        <p align="center">
+          <button onclick="myFunction2()" type="button">
+            Submit
+          </button>
+          <h2 id="divi2">new</h2>
+        </p>
+      </fieldset>
+      </div>
+      </center>
+    </form>
+    <script>
+      function myFunction1() {
+  var x = document.getElementById("divi1");
+  var y = document.getElementById("divi2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("divi1");
+  var y = document.getElementById("divi2");
+  if (y.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}
+    </script>
+  </body>
+</html>
